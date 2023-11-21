@@ -55,7 +55,7 @@ Database was recovered from [PENDIENTE``].
 
 # TOOLBOX
 
-We are goint to work with a toolbox called "UllRToolBox" -> https://sites.google.com/site/ullrtoolbox/
+We are going to work with a toolbox called "UllRToolBox" -> https://sites.google.com/site/ullrtoolbox/
 
 ## References
 1. Kenny, D. A. (2015). Measuring model fit.
