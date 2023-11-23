@@ -72,6 +72,10 @@ fit4 <- sem.fnc(df, modelo = mod4, estimador = "MLR", ortogonal = F, grafica = T
 
 install.packages("lavaan") ; library(lavaan)
 
+dir()
+df <- read.table('df_efa_cfa_github_3.txt', header = TRUE, stringsAsFactors = FALSE, colClasses = "numeric", dec = ",")
+nv(df)
+
 ## EFA ----
 
 fa.parallel(df, fa = "fa")
