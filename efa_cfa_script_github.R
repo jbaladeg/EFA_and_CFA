@@ -20,6 +20,8 @@ analisis.factorial.fnc(df,n.factores = 2, variables = 1:7, tipo = 'af', rotacion
 
 ##CFA ----
 
+#desing your model for CFA
+
 mod1='
 F1 =~ V4 + V6 + V5
 F2 =~ V3 + V1 + V2
