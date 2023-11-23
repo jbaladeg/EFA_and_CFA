@@ -75,7 +75,7 @@ The final data frame for the activity is **"df_efa_cfa_github_3.txt"**
 # TOOLBOX
 
 We are going to work with a toolbox called "UllRToolBox" by University of La Laguna -> https://sites.google.com/site/ullrtoolbox/.
-This tool provides us more information about the data using the same fuctions. However, fuctions are in spanish.
+This tool provides us more information about the data using the same fuctions. Fuctions are in spanish.
 Nevertheless, we'll do an example using ULLRToolBox and Lavaan package.
 
 ## References
