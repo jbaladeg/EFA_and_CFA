@@ -30,7 +30,7 @@ fit1 <- sem.fnc(df, modelo = mod1, estimador = "MLR", ortogonal = F, grafica = T
   #scaled 36.609  8     0 0.961 0.941 0.968 0.941 0.971 0.086       0.059       0.114
 
   #this value was just over the limit by a very small margin
-  #Look "Indice de modificacxion de errores" (Rates of change errors). Does any "MI" index stand out from the rest? Include it in your model.
+  #Look "Indice de modificacion de errores" (Rates of change errors). Does any "MI" index stand out from the rest? Include it in your model.
   #you can justify through scientific literature the release between these variables, but making more than one release to adjust your model is strongly discouraged.
 
 mod2='
