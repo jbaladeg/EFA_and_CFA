@@ -29,6 +29,9 @@ ____________________________________________________________
 🟣 quality ⤵
 
 ⭕ writing performance
+
+![o](https://github.com/jbaladeg/EFA_and_CFA/assets/100955286/fcd826e1-11a9-40e0-8925-f9aeb6af9705)
+
 _____________________________________________________________
 
 Another example: "[...] *the observed variables are the responses to the items on the personality test, the latent variables are the underlying dimensions or traits that are inferred from these responses, and the constructs are the theoretical entities that are being measured.*"
