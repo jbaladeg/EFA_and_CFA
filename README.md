@@ -17,21 +17,22 @@ These dimensions could be explored through a writing task, such as "story writin
 
 So the model could be like that:
 
-🟩 observed variables ⤵
-🟣 latent variables ⤵
+🟩 observed variables ➡
+🟣 latent variables ➡
 ⭕ construct
 ____________________________________________________________
 
-🟩 total_words + unique_words + total_sentences ⤵
+🟩 total_words + unique_words + total_sentences ➡
 🟣 productivity ⤵
 
-🟩 narrative_organization + total_ideas + sentence_fluency ⤵
+🟩 narrative_organization + total_ideas + sentence_fluency ➡
 🟣 quality ⤵
 
 ⭕ writing performance
 _____________________________________________________________
 
 Another example: "[...] *the observed variables are the responses to the items on the personality test, the latent variables are the underlying dimensions or traits that are inferred from these responses, and the constructs are the theoretical entities that are being measured.*"
+See https://stats.oarc.ucla.edu/r/seminars/rsem/#s3 for more theoretical information and other examples.
 
 ## Fit index of CFA
 
@@ -43,7 +44,7 @@ The fit indices resulting from the CFA need to meet some basic criteria:
 - 🔰 IFI -> must be > .90
 - 🔰 RMSEA -> must be < .08 or <.05 (depend on the author)
 - 🔰 SRMR -> must be <.08
-- 🔰 EXTRA information -> there cannot be negative variances
+- 🔰 EXTRA information -> there cannot be negative variances and the matrix cannot be singular
 
 If these indices meet these criteria, the internal structure of our model is valid.
 
@@ -51,37 +52,31 @@ If these indices meet these criteria, the internal structure of our model is val
 
 ## Function arguments
 
-#### For ToolBox by ULL
+FOR EFA
+- 🌸 tipo -> 'af' = analysis factor / 'pc' = principal components
+- 🌸 rotacion/rotation -> character. Either perform no rotation ("none"; default), an orthogonal rotation ("varimax", "equamax", "quartimax", "geominT", "bentlerT", or "bifactorT"), or an oblique rotation ("promax", "oblimin", "quartimin", "simplimax", "bentlerQ", "geominQ", or "bifactorQ"). See https://search.r-project.org/CRAN/refmans/EFAtools/html/EFA.html
+- 🌸 grafica/graphic -> logical. T (appears) or F (not appears)
+- 🌸 variables -> variables included in the analysis
+- 🌸 n.factores -> number of factor suggested by parallel analysis
 
-- 🗨️ tipo ->
-- 🗨️ rotacion ->
-- 🗨️ grafica ->
-  - = TRUE
-  - = FALSE
-- 🗨️ estimador ->
-- 🗨️ ortogonal ->
-  - = TRUE
-  - = FALSE
+FOR CFA
+- 🌼 estimador -> character. "ML" (default), "MLM" (robust) -> See https://lavaan.ugent.be/tutorial/est.html
+- 🌼 ortogonal/orthogonal -> logical. TRUE (it's orthogonal, i.e., factors are not correlated) or FALSE (it's oblique, i.e., factors are correlated).
+- 🌼 variables -> variables included in the analysis
+- 🌼 grafica/graphic -> logical. T (appears) or F (not appears)
+- 🌼 modelo/model -> model we want to test
 
-#### For Lavaan
-
-- 🗨️ tipo ->
-- 🗨️ rotacion ->
-- 🗨️ grafica ->
-  - = TRUE
-  - = FALSE
-- 🗨️ estimador ->
-- 🗨️ ortogonal ->
-  - = TRUE
-  - = FALSE
 
 ## Explanation of the example database
 
-Database was recovered from [PENDIENTE :)].
+For this analysis a database with simulated data was created. You can see the procedure in "base_efa_cfa_github.R".
+The final data frame for the activity is **"df_efa_cfa_github_3.txt"**
 
 # TOOLBOX
 
-We are going to work with a toolbox called "UllRToolBox" by University of La Laguna -> https://sites.google.com/site/ullrtoolbox/
+We are going to work with a toolbox called "UllRToolBox" by University of La Laguna -> https://sites.google.com/site/ullrtoolbox/.
+This tool provides us more information about the data using the same fuctions. However, fuctions are in spanish.
+Nevertheless, we'll do an example using ULLRToolBox and Lavaan package.
 
 ## References
 1. Kenny, D. A. (2015). Measuring model fit.
@@ -90,3 +85,6 @@ We are going to work with a toolbox called "UllRToolBox" by University of La Lag
 4. Penthin, M., Pirner, M. L., Scheunpflug, A., & Kröner, S. (2022). Measuring student teachers’ beliefs regarding religion in schools: piloting and preliminary validation of two newly developed scales. British Journal of Religious Education, 44(3), 281-292.
 5. Tavakol, M., & Wetzel, A. (2020). Factor Analysis: a means for theory and instrument development in support of construct validity. International journal of medical education, 11, 245.
 6. https://easystats.github.io/effectsize/reference/interpret_gfi.html
+7. https://stats.oarc.ucla.edu/r/seminars/rsem/#s3
+8. https://lavaan.ugent.be/tutorial/est.html
+9. https://search.r-project.org/CRAN/refmans/EFAtools/html/EFA.html
