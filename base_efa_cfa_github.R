@@ -18,7 +18,7 @@ sigma.1 <- rbind(c(1, 0.4, 0.5, 0.1, 0.3, 0.1, 0.01),
 #create the average of the vectors 
 mu.1 <- c(10,5,9,7,6,500,1)
 
-#create tha data frame
+#create a random data frame with base on above conditions
 df <- as.data.frame(mvrnorm(n=500, mu = mu.1, Sigma = sigma.1))
 
 #export data frame
