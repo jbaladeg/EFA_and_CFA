@@ -56,18 +56,18 @@ If these indices meet these criteria, the internal structure of our model is val
 ## Function arguments
 
 FOR EFA
-- 🌸 tipo -> 'af' = analysis factor / 'pc' = principal components
+- 🌸 tipo -> character. 'af' = analysis factor / 'pc' = principal components
 - 🌸 rotacion/rotation -> character. Either perform no rotation ("none"; default), an orthogonal rotation ("varimax", "equamax", "quartimax", "geominT", "bentlerT", or "bifactorT"), or an oblique rotation ("promax", "oblimin", "quartimin", "simplimax", "bentlerQ", "geominQ", or "bifactorQ"). See https://search.r-project.org/CRAN/refmans/EFAtools/html/EFA.html
 - 🌸 grafica/graphic -> logical. T (appears) or F (not appears)
-- 🌸 variables -> variables included in the analysis
-- 🌸 n.factores -> number of factor suggested by parallel analysis
+- 🌸 variables -> character. variables included in the analysis
+- 🌸 n.factores -> numeric. number of factor suggested by parallel analysis
 
 FOR CFA
 - 🌼 estimador -> character. "ML" (default), "MLM" (robust) -> See https://lavaan.ugent.be/tutorial/est.html
 - 🌼 ortogonal/orthogonal -> logical. TRUE (it's orthogonal, i.e., factors are not correlated) or FALSE (it's oblique, i.e., factors are correlated).
-- 🌼 variables -> variables included in the analysis
+- 🌼 variables -> character. variables included in the analysis
 - 🌼 grafica/graphic -> logical. T (appears) or F (not appears)
-- 🌼 modelo/model -> model we want to test
+- 🌼 modelo/model -> character. model we want to test
 
 
 ## Explanation of the example database
