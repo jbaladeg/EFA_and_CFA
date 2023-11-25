@@ -64,7 +64,7 @@ FOR EFA
 
 FOR CFA
 - 🌼 estimador -> character. "ML" (default), "MLM" (robust) -> See https://lavaan.ugent.be/tutorial/est.html
-- 🌼 ortogonal/orthogonal -> logical. TRUE (it's orthogonal, i.e., factors are not correlated) or FALSE (it's oblique, i.e., factors are correlated).
+- 🌼 ortogonal/orthogonal -> logical. T (it's orthogonal, i.e., factors are not correlated) or F (it's oblique, i.e., factors are correlated).
 - 🌼 variables -> character. variables included in the analysis
 - 🌼 grafica/graphic -> logical. T (appears) or F (not appears)
 - 🌼 modelo/model -> character. model we want to test
